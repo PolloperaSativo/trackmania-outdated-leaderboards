@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trackmania Nations Forever Records</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Trackmania Nations Forever Records</h1>
+        
+        <div class="search-container">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search by track or username...">
+            </div>
+            <div class="filter-container">
+                <select id="countryFilter">
+                    <option value="">All Countries</option>
+                </select>
+                <select id="trackFilter">
+                    <option value="">All Tracks</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="table-container">
+            <table id="recordsTable">
+                <thead>
+                    <tr>
+                        <th>Track</th>
+                        <th>Username</th>
+                        <th>Time</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Records will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="pagination">
+            <button id="prevBtn">Previous</button>
+            <span id="pageInfo">Page 1 of 1</span>
+            <button id="nextBtn">Next</button>
+        </div>
+    </div>
+
+    <script src="datos.js"></script>
+    <script src="logica.js"></script>
+</body>
+</html>
